@@ -1,25 +1,25 @@
 class Orchestrate < Formula
   desc "Run a spec's tickets through Claude Code sessions and merge the results"
   homepage "https://github.com/sanchit36/orchestrate"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.0/orchestrate-aarch64-apple-darwin.tar.xz"
-      sha256 "b2b49b9ef5880a1f88702f7cea2b6112aa735e578ac7d13a2733cce2fb9f0bfe"
+      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.1/orchestrate-aarch64-apple-darwin.tar.xz"
+      sha256 "1577da9c5443b919ad27c1bf5271758302b3c2bbcb53d6d365ad657f5e25ef79"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.0/orchestrate-x86_64-apple-darwin.tar.xz"
-      sha256 "a88faa14ea7e0845b2be28d1ad90c3196b31b39137898a1602f2e0e40c9dc678"
+      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.1/orchestrate-x86_64-apple-darwin.tar.xz"
+      sha256 "9cba10013ccdf21c05692c1b5a0f6545f98a0e00f9bd39293a015b2751533e3c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.0/orchestrate-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "07e086adddff3d8445e198ad734be1bdfea92ad7ff1e352f9c300946d345bbcf"
+      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.1/orchestrate-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "9b27a89ca7df911d4d0a8591e9c982b28d81177928332212f123ffa54c190c10"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.0/orchestrate-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "6a718b502d9f846023d2dcd01659fab43e2d43b033f6fce66fcc17e8f75e0562"
+      url "https://github.com/sanchit36/orchestrate/releases/download/v0.1.1/orchestrate-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "a6a5391fa581e09e02fef5a7b6ed1b04839eea0073d0a38313316d88c7cda9d7"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
